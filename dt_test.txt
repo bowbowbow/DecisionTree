@@ -1,0 +1,6 @@
+age	income	student	credit_rating
+<=30	low	no	fair
+<=30	medium	yes	fair
+31...40	low	no	fair
+>40	high	no	fair
+>40	low	yes	excellent
