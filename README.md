@@ -44,17 +44,17 @@ This algorithm is used for automatic decision tree generation.
 
 **Attribute Selection Measure : Information GainRatio**
 
-$GainRatio(A) = \frac {Gain(A)}{SplitInfo(A)} $
+![](https://latex.codecogs.com/gif.latex?$$GainRatio(A)&space;=&space;\frac&space;{Gain(A)}{SplitInfo(A)}&space;$$)
 
-$SplitInfo_{A}(D) = - \sum _{ j=1 }^{ v } \frac { \left| { D }_{ j } \right|  }{ \left| D \right|  } log_{2}(\frac { \left| { D }_{ j } \right|  }{ \left| D \right|  })$
+![](https://latex.codecogs.com/gif.latex?$$SplitInfo_{A}(D)&space;=&space;-&space;\sum&space;_{&space;j=1&space;}^{&space;v&space;}&space;\frac&space;{&space;\left|&space;{&space;D&space;}_{&space;j&space;}&space;\right|&space;}{&space;\left|&space;D&space;\right|&space;}&space;log_{2}(\frac&space;{&space;\left|&space;{&space;D&space;}_{&space;j&space;}&space;\right|&space;}{&space;\left|&space;D&space;\right|&space;})$$)
 
-$Gain(A) = info(D) - info_{A}(D)$
+![](https://latex.codecogs.com/gif.latex?$$Gain(A)&space;=&space;info(D)&space;-&space;info_{A}(D)$$)
 
-$info_{A}(D) = \sum _{ j=1 }^{ v } \frac { \left| { D }_{ j } \right|  }{ \left| D \right|  } info({ D }_{ j })$
+![](https://latex.codecogs.com/gif.latex?$$info_{A}(D)&space;=&space;\sum&space;_{&space;j=1&space;}^{&space;v&space;}&space;\frac&space;{&space;\left|&space;{&space;D&space;}_{&space;j&space;}&space;\right|&space;}{&space;\left|&space;D&space;\right|&space;}&space;info({&space;D&space;}_{&space;j&space;})$$)
 
-$info(D) = - \sum _{ i=1 }^{ m }{ { p }_{ i }{ log }_{ 2 }({ p }_{ i }) } $
+![](https://latex.codecogs.com/gif.latex?$$info(D)&space;=&space;-&space;\sum&space;_{&space;i=1&space;}^{&space;m&space;}{&space;{&space;p&space;}_{&space;i&space;}{&space;log&space;}_{&space;2&space;}({&space;p&space;}_{&space;i&space;})&space;}&space;$$)
 
-$p_{i} = \frac { \left| { C }_{ i, D } \right|  }{ \left| D \right|  }  $
+![](https://latex.codecogs.com/gif.latex?$$p_{i}&space;=&space;\frac&space;{&space;\left|&space;{&space;C&space;}_{&space;i,&space;D&space;}&space;\right|&space;}{&space;\left|&space;D&space;\right|&space;}&space;$$)
 
 
 Any other specification of the implementation and testing
