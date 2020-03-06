@@ -62,8 +62,6 @@ Any other specification of the implementation and testing
 
 - Note that I use c++11, not c++. therefore -std=c++11 option is must be given in g++.
 
-- Since the test code uploaded to Hanyang Portal is for Windows, I added checker class for using in Unix. 
-
 - `self test result `
 > **Gain**
 > Accuracy: 91.0405%(315/346)
