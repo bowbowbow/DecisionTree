@@ -8,12 +8,12 @@ To run the implementation
 
 1. Keep project files in one folder.
 
-2. compile using command `make`.
+2. Compile using command `make`.
 > To compile without using the makefile, type the following command.
 >
 > `g++ -std=c++11 decision_tree.cpp -o dt.exe`
 > 
-> (Note that -std=c++11 option is must be given in g++.)
+> (Note that -std=c++11 option must be given in g++.)
 
 3. Run using following command.
 > ./dt.exe [dt_train.txt] [dt_test.txt] [dt_result.txt]
@@ -25,17 +25,17 @@ Summary of the algorithm
 This algorithm is used for automatic decision tree generation.
 
 > **Input**:
-> 1. Data partition, D, which is a set of training tuples and their associated class labels. attribute_list.
-> 2. the set of candidate attributes
-> 3. Attribute_selection_method, a procedure to determine the splitting criterion that "best" partitions the data tuples into individual classes. This criterion consists of a splitting_attribute and, possibly, either a split-point or splitting subset.
+> 1. **Data partition**: D, which is a set of training tuples and their associated class labels.
+> 2. **Attribute_list**: The set of candidate attributes
+> 3. **Attribute_selection_method**: A procedure to determine the splitting criterion that "best" partitions the data tuples into individual classes. This criterion consists of a splitting_attribute and, possibly, either a split-point or splitting subset.
 > 
-> **Output**: A decision tree
+> **Output**: A decision tree.
 
 **Basic Algorithm (a greedy algorithm)**
-- tree is constructed in a top-down, recursive, divide-and-conquer manner
-- At start, all the training examples are at the root
-- Attributes are categorical (Note that if continuous-valued, they are discretized in advance)
-- Test attributes are selected on the basis of a heuristic or statistical measure
+- Tree is constructed in a top-down, recursive, divide-and-conquer manner.
+- At start, all the training examples are at the root.
+- Attributes are categorical. (Note that if continuous-valued, they are discretized in advance)
+- Test attributes are selected on the basis of a heuristic or statistical measure.
 
 **Conditions for stopping partitioning**
 - All samples for a given node belong to the same class
@@ -65,16 +65,16 @@ Any other specification of the implementation and testing
 - Since the test code uploaded to Hanyang Portal is for Windows, I added checker class for using in Unix. 
 
 - `self test result `
-> **gain**
+> **Gain**
 > Accuracy: 91.0405%(315/346)
 >
-> **gain ratio**
+> **Gain ratio**
 > Accuracy: 91.9075%(318/346)
 >
-> **estimated error pruning with gain ratio**
+> **Estimated error pruning with gain ratio**
 > Accuracy: 67.9191%(235/346)
 >
-> **simple pre-pruning rule based on majority heuristic with gain ratio** 
+> **Simple pre-pruning rule based on majority heuristic with gain ratio** 
 > Aaccuracy: 92.1965%(319/346)
 
 About input file
@@ -106,7 +106,7 @@ About input file
 About output file
 ============
 
-**output file format**
+**Output file format**
 
 [attribute_name_1]`\t`[attribute_name_2]`\n`...[attribute_name_n]
 
